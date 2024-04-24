@@ -40,6 +40,14 @@ pipeline {
                 }
             }
         }
+	    
+	stage('Deploy on k8s cluster') {
+            steps {
+                script {
+        		echo "deploy on k8s ..."
+                }
+            }
+        }
 
     }
 
